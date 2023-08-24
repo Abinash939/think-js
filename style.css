@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: rgb(34, 24, 91);
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/* @media (max-width:768px){
+  *{
+    margin:10px;
+  }
+} */
+
+
+.header {
+  border-bottom: 1px solid #E2E8F0;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+.header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .navbar .nav-logo img {
+  width: 35%;
+}
+.header .navbar .nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .navbar .nav-menu .nav-item {
+  margin-left: 2rem;
+  list-style: none;
+}
+.header .navbar .nav-menu .nav-item .nav-link {
+  font-weight: 400;
+  text-decoration: none;
+}
+.header .navbar .nav-menu .nav-item .nav-link:hover {
+  color: #482ff7;
+}
+.header .navbar .hamburger {
+  display: none;
+}
+.header .navbar .hamburger .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+@media only screen and (max-width: 768px) {
+  .header .navbar .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 3rem;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    z-index: 1;
+  }
+  .header .navbar .nav-menu.active {
+    left: 0;
+  }
+  .header .navbar .nav-menu .nav-item {
+    margin: 2.5rem 0;
+  }
+  .header .navbar .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+}
+.bannerSection {
+  max-width: 1250px;
+  margin: 0 auto;
+  width: 100%;
+  overflow: hidden;
+}
+.bannerSection .bannerContainer {
+  position: relative;
+}
+.bannerSection .bannerContainer .herobanner {
+  position: absolute;
+  top: 50%;
+  left: 0.5rem;
+}
+
+@media (max-width: 768px){
+  .bannerSection{
+    max-width: 100%;
+  }
+  .bannerSection .bannerContainer .banner{
+    width: 100%;
+  }
+}
+
+.cardSection{
+  max-width: 1250px;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+ .cardSection hr{
+    margin-top: 50px;
+    display: none;
+ }
+.cardSection .cardContainer .cardContainerText{
+  display: flex;
+  width: 100%;
+  gap: 15px;
+  margin-top: 30px;
+}
+.cardSection .cardContainer p{
+  margin-top: 10px;
+}
+
+.cardSection .cardContainer .cardContainerCard{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.cardSection .cardContainer .cardContainerCard .card{
+  width: 100%;
+  margin: 0 10px;
+}
+
+
+.cardSection .cardContainer .cardContainerCard .card img{
+  border: 1px solid rgb(36, 56, 83);
+  width: 100%;
+}
+
+.cardSection .cardContainer .cardContainerCard .card h2{
+  color: red;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px){
+  .cardSection .cardContainer .cardContainerCard{
+    display: block;
+  }
+
+  .cardSection .cardContainer .cardContainerCard .card{
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  .cardSection hr{
+    display: block;
+  }
+}
+
+.yogaSection {
+  max-width: 1250px;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+.yogaSection .yogaContainer {
+  display: flex;
+  width: 100%;
+  gap: 15px;
+  margin-top: 30px;
+}
+.yogaSection .yogaContainer .arrowText {
+  color: rgb(34, 24, 91);
+  
+}
+.yogaSection .yogaContainerText {
+  margin-top: 10px;
+}
+
+.yogaSectionBanner {
+  max-width: 1250px;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+.yogaSectionBanner .yogaConatinerBanner {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+}
+.yogaSectionBanner .yogaConatinerBanner .bannerLeft {
+  width: 75%;
+}
+.yogaSectionBanner .yogaConatinerBanner .bannerLeft .bannerHeading h1 {
+  color: red;
+}
+.yogaSectionBanner .yogaConatinerBanner .bannerLeft .bannerHeading p {
+  margin-top: 10px;
+}
+.yogaSectionBanner .yogaConatinerBanner .bannerLeft .bannerPoints {
+  width: 90%;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+@media (max-width:768px){
+  .yogaSection .yogaContainer {
+    margin-top: 50px;
+  }
+
+  .yogaSectionBanner .yogaConatinerBanner{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .yogaSectionBanner .yogaConatinerBanner .bannerLeft {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .yogaSectionBanner .yogaConatinerBanner .bannerLeft .bannerPoints{
+    margin-left: 30px;
+    line-height: 25px;
+  }
+  .yogaSectionBanner .yogaConatinerBanner .bannerRight img{
+    width: 100%;
+  }
+}
+
+.jarSection {
+  max-width: 1250px;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+.jarSection .jarContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.jarSection .jarContainer .rightJar {
+  width: 75%;
+}
+.jarSection .jarContainer .rightJar .bannerHeading h1 {
+  color: red;
+}
+.jarSection .jarContainer .rightJar .bannerHeading p {
+  margin-top: 10px;
+}
+.jarSection .jarContainer .rightJar .bannerPoints {
+  width: 90%;
+  margin-left: 50px;
+  margin-top: 20px;
+  line-height: 25px;
+}
+.jarSection hr {
+  margin-top: 30px;
+}
+
+@media (max-width:768px){
+  .jarSection .jarContainer{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .jarSection .jarContainer .leftjar img{
+    width: 100%;
+  }
+  .jarSection .jarContainer .rightJar {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .jarSection .jarContainer .rightJar .bannerPoints{
+    margin-left: 30px;
+  }
+}
+
+.myFooter {
+  max-width: 1250px;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+}
+.myFooter .footerContainer {
+  text-align: center;
+  margin-top: 30px;
+}
+.myFooter .footerContainer p {
+  line-height: 30px;
+}
+.myFooter .footerContainer ul {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  list-style: none;
+  gap: 10px;
+}/*# sourceMappingURL=style.css.map */
